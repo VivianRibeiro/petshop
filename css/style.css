@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    box-sizing: border-box; /*assim preenchemos toda a header*/
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+}
+/* padrao daqui pra cima*/
+header{ 
+    background-color: #FFBE51;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+header .container{ /* para usar display flex precisa ter o display:flex junto dos comandos no mesmo bloco. Além disso só funciona para os filhos direto fique atenta*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    list-style: none;
+    font-size: 20px;
+}
+header ul li{
+    display: inline-block;
+    padding: 20px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.banner .descricao {
+    margin-top: 80px;
+}
+.banner .descricao p {
+    color: #757575;
+    text-transform: uppercase;
+    font-size: 30px;
+    width: 80%;
+}
+.banner .imagem{
+    width: auto;
+    margin-top: 80px;
+}
+.servicos{
+    background-color: #E5E5E5;
+    margin-top: 7%;
+}
+.servicos h1{
+    text-align: center;  
+    padding-top: 5%; 
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.servicos .listaservicos{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+}
+.listaservicos article h2{
+    font-weight:bold;
+    font-size: 20px;
+}
+.listaservicos article h3{
+    font-size: 15px;
+}
+.banner2{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.banner2 .texto {
+    width: 50%;
+}
+footer{
+    background-color: #FFBE51;
+}
+.conteudo {
+    display: flex;
+    height: 320px;
+    justify-content: space-between;
+}
+.conteudo .footer_logo{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.conteudo .imagem_footer{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+/* formulario trabalhe conosco*/
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 20px;
+    resize: none;
+}
+​
+form button {
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background-color: #ffbe51;
+    border: 0;
+    color: white;
+    font-weight: 600;
+}
